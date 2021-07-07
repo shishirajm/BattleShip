@@ -16,4 +16,11 @@
   <ItemGroup>
     <Folder Include="Dtos\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Dockerfile">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
 </Project>

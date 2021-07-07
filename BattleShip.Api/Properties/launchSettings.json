@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "battleship",
-      "applicationUrl": "https://localhost:55201;http://localhost:29531",
+      "applicationUrl": "http://localhost:55201;https://localhost:55202",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
