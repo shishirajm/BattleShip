@@ -17,7 +17,7 @@ namespace Battleship.Player.Tests
         [Test]
         public void PlaceShip_ShouldPlaceShipSuccessfully_OnValidSpotAndDirectionHorizontal()
         {
-            var ship = new BattleShip(2);
+            var ship = new BattleShip(0, 2);
             board.PlaceShip(ship, new Spot(0, 0), Direction.Horizontal);
             var actual1 = board.Attack(new Spot(0, 0));
             var actual2 = board.Attack(new Spot(0, 1));
@@ -32,7 +32,7 @@ namespace Battleship.Player.Tests
         [Test]
         public void PlaceShip_ShouldPlaceShipSuccessfully_OnValidSpotAndDirectionVertical()
         {
-            var ship = new BattleShip(2);
+            var ship = new BattleShip(0, 2);
             board.PlaceShip(ship, new Spot(0, 0), Direction.Vertical);
             var actual1 = board.Attack(new Spot(0, 0));
             var actual2 = board.Attack(new Spot(1, 0));
@@ -51,7 +51,7 @@ namespace Battleship.Player.Tests
         [TestCase(5)]
         public void PlaceShip_ShouldThrowException_OnInValidSpotForShipWhenVertical(int shipSize)
         {
-            var ship = new BattleShip(shipSize);
+            var ship = new BattleShip(0, shipSize);
             Assert.Throws<Exception>(() => board.PlaceShip(ship, new Spot(9, 0), Direction.Vertical));
             Assert.Throws<Exception>(() => board.PlaceShip(ship, new Spot(9, 9), Direction.Vertical));
         }
@@ -63,7 +63,7 @@ namespace Battleship.Player.Tests
         [TestCase(5)]
         public void PlaceShip_ShouldThrowException_OnInValidSpotForShipWhenHorizontal(int shipSize)
         {
-            var ship = new BattleShip(shipSize);
+            var ship = new BattleShip(0, shipSize);
             Assert.Throws<Exception>(() => board.PlaceShip(ship, new Spot(0, 9), Direction.Horizontal));
             Assert.Throws<Exception>(() => board.PlaceShip(ship, new Spot(9, 9), Direction.Horizontal));
         }
