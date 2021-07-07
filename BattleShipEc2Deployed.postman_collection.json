@@ -1,0 +1,119 @@
+{
+	"id": "06e75f4c-76e3-88a1-1b3f-2acf495b77fc",
+	"name": "BattleShipEc2Deployed",
+	"description": "",
+	"order": [
+		"cdc9041f-6ff2-0a6b-9db1-c9e58c8c8d02",
+		"ef22ea5c-436d-604a-5ae4-c86fd1b10af0",
+		"5d3e9e29-252c-4991-f319-5518233279ef",
+		"c7d4dffb-89da-c5ac-a7fe-f7c69f73cdf1"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1625677293026,
+	"owner": "2134294",
+	"public": false,
+	"requests": [
+		{
+			"id": "5d3e9e29-252c-4991-f319-5518233279ef",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ec2-3-25-255-129.ap-southeast-2.compute.amazonaws.com:55201/battleship/attack/13fb4c44-dcdb-4599-9894-9b9bd9eee45b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625677727384,
+			"name": "attack",
+			"description": "",
+			"collectionId": "06e75f4c-76e3-88a1-1b3f-2acf495b77fc",
+			"responses": [],
+			"rawModeData": "{\n\t\"rowPosition\": 1,\n\t\"columnPosition\": 3\n}"
+		},
+		{
+			"id": "c7d4dffb-89da-c5ac-a7fe-f7c69f73cdf1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://ec2-3-25-255-129.ap-southeast-2.compute.amazonaws.com:55201/battleship/state/13fb4c44-dcdb-4599-9894-9b9bd9eee45b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625677711760,
+			"name": "state",
+			"description": "",
+			"collectionId": "06e75f4c-76e3-88a1-1b3f-2acf495b77fc",
+			"responses": []
+		},
+		{
+			"id": "cdc9041f-6ff2-0a6b-9db1-c9e58c8c8d02",
+			"headers": "",
+			"headerData": [],
+			"url": "http://ec2-3-25-255-129.ap-southeast-2.compute.amazonaws.com:55201/battleship/createboard",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625677323055,
+			"name": "Createboard",
+			"description": null,
+			"collectionId": "06e75f4c-76e3-88a1-1b3f-2acf495b77fc",
+			"responses": []
+		},
+		{
+			"id": "ef22ea5c-436d-604a-5ae4-c86fd1b10af0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://ec2-3-25-255-129.ap-southeast-2.compute.amazonaws.com:55201/battleship/placeship/13fb4c44-dcdb-4599-9894-9b9bd9eee45b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1625677663261,
+			"name": "placeship",
+			"description": "",
+			"collectionId": "06e75f4c-76e3-88a1-1b3f-2acf495b77fc",
+			"responses": [],
+			"rawModeData": "{\n\t\"shipId\": 0,\n\t\"rowPosition\": 1,\n\t\"columnPosition\": 1,\n\t\"direction\": \"horizontal\"\n}"
+		}
+	]
+}
