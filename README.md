@@ -10,3 +10,5 @@
 * I feel there are lot of improvements can be done. There might be un-tested code having bugs.
 * Memory just stores everything, no restrictions on how many games to store. Since its in memory when redeployed all the data will be lost.
 * Number of ships alloted to game is set to one as it was easy to test, can be modified.
+* I have included: BattleShip.postman_collection.json and BattleShipEc2Deployed.postman_collection.json Postman collection to test the API as I couldn't detail the spec.
+* Deployed on EC2 instance: http://ec2-3-25-255-129.ap-southeast-2.compute.amazonaws.com:55201
